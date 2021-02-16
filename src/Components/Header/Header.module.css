@@ -1,0 +1,21 @@
+.nav_list{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    height: 70px;
+  
+  }
+  .nav_list li{
+    padding: 15px;
+    
+  }
+  .nav_list a{
+    padding: 15px;
+    
+  }
+  
+  .nav_list li:hover{
+    
+    border-bottom: 3px solid darkslategray;
+    transition: 5ms;
+  }

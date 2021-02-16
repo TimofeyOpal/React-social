@@ -1,16 +1,22 @@
 
-import './App.css';
+import './Components/App.module.css';
+import Header from './Components/Header/Header';
+import Text from './Components/Text/Text';
+import Profile from "./Components/Profile/Profile";
+import Dialogs from "./Components/Dialogs/Dialogs";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
-    <Header/>
-    
+      <BrowserRouter>
+    <div>
+      <Header/>
+      <Text />
 
-  );
-}
-function Header() {
-  return (
-    <h1>привет мир</h1>
+      <Route path={'/Profile'} component={Profile} />
+      <Route path={'/Dialogs'} component={Dialogs}  />
+    </div>
+      </BrowserRouter>
 
   );
 }
